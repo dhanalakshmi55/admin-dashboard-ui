@@ -1,0 +1,58 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard | Uriht Admin</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h2>Uriht Admin</h2>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active">🏠 Dashboard</a></li>
+            <li><a href="job-postings.html">📋 Job Postings</a></li>
+            <li><a href="applicants.html">👥 Applicants</a></li>
+            <li><a href="settings.html">⚙️ Settings</a></li>
+            <li><a href="#" onclick="logout()">🚪 Logout</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <header class="topbar">
+          <h1>Dashboard Overview</h1>
+        </header>
+
+        <!-- Dashboard Cards -->
+        <div class="kpi-grid">
+          <div id="totalApplicantsContainer"></div>
+          <div id="jobPostsContainer"></div>
+          <div id="interviewsContainer"></div>
+          <div id="logsContainer"></div>
+        </div>
+
+        <!-- Chart Section -->
+        <section class="charts-section">
+          <div class="chart-box">
+            <canvas id="jobStatusChart"></canvas>
+          </div>
+          <div class="chart-box">
+            <canvas id="applicantStatusChart"></canvas>
+          </div>
+          <div class="chart-box">
+            <canvas id="applicantsPerPositionChart"></canvas>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>

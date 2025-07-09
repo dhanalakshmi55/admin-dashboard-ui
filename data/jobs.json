@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Front-End Developer",
+    "department": "Engineering",
+    "location": "Chennai",
+    "type": "Full-time",
+    "postedDate": "2025-07-01",
+    "status": "Open"
+  },
+  {
+    "id": 2,
+    "title": "Back-End Developer",
+    "department": "Engineering",
+    "location": "Chennai",
+    "type": "Full-time",
+    "postedDate": "2025-06-25",
+    "status": "Closed"
+  },
+  {
+    "id": 3,
+    "title": "UI/UX Designer",
+    "department": "Design",
+    "location": "Remote",
+    "type": "Contract",
+    "postedDate": "2025-06-20",
+    "status": "Open"
+  },
+  {
+    "id": 4,
+    "title": "HR Manager",
+    "department": "Human Resources",
+    "location": "Chennai",
+    "type": "Full-time",
+    "postedDate": "2025-06-15",
+    "status": "Open"
+  },
+  {
+    "id": 5,
+    "title": "Marketing Specialist",
+    "department": "Marketing",
+    "location": "Bangalore",
+    "type": "Part-time",
+    "postedDate": "2025-06-10",
+    "status": "Open"
+  }
+]

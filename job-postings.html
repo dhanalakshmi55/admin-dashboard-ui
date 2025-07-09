@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Job Postings - Admin Dashboard</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/jobs.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Uriht Admin</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">🏠 Dashboard</a></li>
+          <li><a href="job-postings.html" class="active">📄 Job Postings</a></li>
+          <li><a href="applicants.html">🧑‍💼 Applicants</a></li>
+          <li><a href="settings.html">⚙️ Settings</a></li>
+          <li><a href="#" onclick="logout()">🚪 Logout</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="topbar">
+        <h1>Job Postings</h1>
+      </header>
+
+      <!-- Controls -->
+      <section class="job-controls">
+        <button id="addJobBtn">➕ Add Job</button>
+        <input type="text" id="searchInput" placeholder="Search jobs..." />
+      </section>
+
+      <!-- Jobs List -->
+      <section class="job-listings" id="jobList">
+        <!-- Dynamic job cards will appear here -->
+      </section>
+    </main>
+  </div>
+
+  <!-- Add Job Modal -->
+  <div class="modal" id="jobModal">
+    <div class="modal-content">
+      <h2>Add New Job</h2>
+      <form id="jobForm">
+        <input type="text" id="jobTitle" placeholder="Job Title" required />
+        <input type="text" id="jobDept" placeholder="Department" required />
+        <textarea id="jobDesc" placeholder="Job Description" required></textarea>
+        <div class="modal-actions">
+          <button type="submit">Save</button>
+          <button type="button" onclick="closeModal()">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/jobs.js"></script>
+</body>
+</html>

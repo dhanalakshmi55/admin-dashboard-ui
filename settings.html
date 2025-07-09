@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Settings | Admin Dashboard</title>
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/settings.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Uriht Admin</h2>
+      <ul>
+        <li><a href="index.html">🏠 Dashboard</a></li>
+        <li><a href="job-postings.html">📌 Job Postings</a></li>
+        <li><a href="applicants.html">👥 Applicants</a></li>
+        <li><a href="settings.html" class="active">⚙️ Settings</a></li>
+        <li><a href="login.html">🚪 Logout</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <h1>Settings</h1>
+      </header>
+
+      <section class="settings-section">
+        <form id="settingsForm">
+          <div class="form-group">
+            <label for="adminName">Admin Name</label>
+            <input type="text" id="adminName" placeholder="Enter your name" />
+          </div>
+
+          <div class="form-group">
+            <label for="adminEmail">Email</label>
+            <input type="email" id="adminEmail" placeholder="Enter your email" />
+          </div>
+
+          <div class="form-group">
+            <label for="adminPassword">New Password</label>
+            <input type="password" id="adminPassword" placeholder="Enter new password" />
+          </div>
+
+          <button type="submit" class="save-btn">💾 Save Settings</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/settings.js"></script>
+</body>
+</html>

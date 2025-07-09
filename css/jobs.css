@@ -1,0 +1,288 @@
+/* === Job Postings Page === */
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.job-header h2 {
+  font-size: 1.6rem;
+}
+
+.job-header button {
+  padding: 0.6rem 1rem;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.job-header button:hover {
+  background-color: #004c99;
+}
+
+.job-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.job-table th, .job-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.job-table th {
+  background-color: #f7f7f7;
+  font-weight: bold;
+}
+
+.job-table tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+/* Sorting Arrows */
+.sort-icon {
+  font-size: 0.8rem;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* Action buttons */
+.action-buttons button {
+  padding: 5px 10px;
+  margin: 0 3px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.action-buttons .edit {
+  background-color: #f0ad4e;
+  color: white;
+}
+
+.action-buttons .delete {
+  background-color: #d9534f;
+  color: white;
+}
+
+/* Modal Styling */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+
+.modal-content h3 {
+  margin-bottom: 1rem;
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.modal-content button {
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.modal-content .save-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.modal-content .cancel-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+
+.job-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.job-controls button {
+  background: #0066cc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.job-controls button:hover {
+  background: #004c99;
+}
+
+.job-controls input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 250px;
+}
+
+/* Job Cards */
+
+.job-listings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.job-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-3px);
+}
+
+.job-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.job-card p {
+  margin: 0.25rem 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.job-card .actions {
+  margin-top: 1rem;
+}
+
+.job-card button {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.job-card button:hover {
+  background: #c0392b;
+}
+
+/* Modal */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+

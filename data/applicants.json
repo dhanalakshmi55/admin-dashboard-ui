@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Alice Johnson",
+    "email": "alice.johnson@example.com",
+    "phone": "+1-555-1234",
+    "position": "Frontend Developer",
+    "status": "Pending",
+    "appliedDate": "2025-07-01",
+    "resume": "data/resume.pdf"
+  },
+  {
+    "name": "Brian Smith",
+    "email": "brian.smith@example.com",
+    "phone": "+1-555-5678",
+    "position": "UI/UX Designer",
+    "status": "Reviewed",
+    "appliedDate": "2025-06-28",
+    "resume": "data/resume.pdf"
+  },
+    {
+    "name": "Brian Smith",
+    "email": "brian.smith@example.com",
+    "phone": "+1-555-5678",
+    "position": "UI/UX Designer",
+    "status": "Reviewed",
+    "appliedDate": "2025-06-28",
+    "resume": "data/resume.pdf"
+  },
+    {
+    "name": "Brian Smith",
+    "email": "brian.smith@example.com",
+    "phone": "+1-555-5678",
+    "position": "UI/UX Designer",
+    "status": "Reviewed",
+    "appliedDate": "2025-06-28",
+    "resume": "data/resume.pdf"
+  },
+    {
+    "name": "Brian Smith",
+    "email": "brian.smith@example.com",
+    "phone": "+1-555-5678",
+    "position": "UI/UX Designer",
+    "status": "Reviewed",
+    "appliedDate": "2025-06-28",
+    "resume": "data/resume.pdf"
+  },
+    {
+    "name": "Brian Smith",
+    "email": "brian.smith@example.com",
+    "phone": "+1-555-5678",
+    "position": "UI/UX Designer",
+    "status": "Reviewed",
+    "appliedDate": "2025-06-28",
+    "resume": "data/resume.pdf"
+  },
+    {
+    "name": "Brian Smith",
+    "email": "brian.smith@example.com",
+    "phone": "+1-555-5678",
+    "position": "UI/UX Designer",
+    "status": "Reviewed",
+    "appliedDate": "2025-06-28",
+    "resume": "data/resume.pdf"
+  },
+  {
+    "name": "Carla Mendes",
+    "email": "carla.mendes@example.com",
+    "phone": "+91-9876543210",
+    "position": "Backend Developer",
+    "status": "accepted",
+    "appliedDate": "2025-07-03",
+    "resume": "data/resume.pdf"
+  },
+  {
+    "name": "David Lee",
+    "email": "david.lee@example.com",
+    "phone": "+44-7700-900123",
+    "position": "Project Manager",
+    "status": "Rejected",
+    "appliedDate": "2025-06-25",
+    "resume": "data/resume.pdf"
+  }
+]

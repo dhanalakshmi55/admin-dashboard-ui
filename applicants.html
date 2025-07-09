@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Applicants | Admin Dashboard</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/applicants.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Uriht Admin</h2>
+      <ul>
+        <li><a href="index.html">🏠 Dashboard</a></li>
+        <li><a href="job-postings.html">📌 Job Postings</a></li>
+        <li><a href="applicants.html" class="active">👥 Applicants</a></li>
+        <li><a href="settings.html">⚙️ Settings</a></li>
+        <li><a href="login.html">🚪 Logout</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <h1>Applicants</h1>
+        <input type="text" id="searchInput" placeholder="Search applicants...">
+      </header>
+
+      <section id="applicantTableContainer">
+        <table class="applicant-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Job Title</th>
+              <th>Status</th>
+              <th>Applied Date</th>
+              <th>Resume</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <!-- <tbody id="applicantBody"> -->
+            <tbody id="applicantTableBody"></tbody>
+
+            <!-- Filled by JS -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/applicants.js"></script>
+</body>
+</html>

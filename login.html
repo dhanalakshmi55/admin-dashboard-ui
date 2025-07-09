@@ -1,0 +1,66 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login | Uriht Admin</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body class="login-page">
+    <div class="login-container">
+      <div class="login-box">
+        <img src="assets/uriht.png" alt="Uriht Logo" class="logo" />
+        <h2>Admin Login</h2>
+
+        <form id="loginForm">
+          <div class="input-wrapper">
+            <input type="email" id="email" placeholder="Email" required />
+          </div>
+
+          <div class="password-wrapper">
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+            <span id="togglePassword" title="Show/Hide"
+              ><svg
+                id="togglePassword"
+                xmlns="http://www.w3.org/2000/svg"
+                title="Show/Hide Password"
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                fill="black"
+                style="
+                  cursor: pointer;
+                  position: absolute;
+                  right: 10px;
+                  top: 50%;
+                  transform: translateY(-50%);
+                "
+              >
+                <path
+                  d="M12 4.5C7 4.5 2.73 8.11 1 12c1.73 3.89 6 7.5 11 7.5s9.27-3.61 11-7.5c-1.73-3.89-6-7.5-11-7.5zm0 13c-3.04 0-5.5-2.46-5.5-5.5S8.96 6.5 12 6.5s5.5 2.46 5.5 5.5S15.04 17.5 12 17.5zm0-9c-1.93 0-3.5 1.57-3.5 3.5S10.07 15.5 12 15.5s3.5-1.57 3.5-3.5S13.93 8.5 12 8.5z"
+                />
+              </svg>
+            </span>
+          </div>
+
+          <button type="submit">Login</button>
+          <p id="errorMsg" class="error"></p>
+        </form>
+
+        <p class="login-info">
+          <strong>Example Login:</strong><br />
+          Email: <code>admin@uriht.in</code><br />
+          Password: <code>admin123</code>
+        </p>
+      </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+  </body>
+</html>
