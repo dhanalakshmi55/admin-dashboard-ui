@@ -9,7 +9,7 @@ A responsive and minimal Admin Dashboard built with **HTML**, **CSS**, and **Jav
 
 Use the following credentials to log in:
 
-- **Email**: `admin@example.com`
+- **Email**: `admin@uriht.in`
 - **Password**: `admin123`
 
 These are hardcoded for front-end demo purposes.
